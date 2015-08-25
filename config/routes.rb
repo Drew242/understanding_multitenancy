@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :show]
   resources :users,  only: [:index, :show]
 
-  namespace :store, path: ':store', as: :store do
+  namespace :stores, path: ':store', as: :store do
     resources :items, only: [:index, :show]
     resources :orders, only: [:index, :show]
   end
